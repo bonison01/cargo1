@@ -13,9 +13,9 @@ import { Link } from 'react-router-dom';
 
 const features = [
   {
-    icon: FileText,
-    title: 'Professional Invoices',
-    description: 'Generate professional invoices with auto-consignment numbers for every shipment.'
+    icon: TruckIcon,
+    title: 'Last Mile Delivery',
+    description: 'Get last-mile delivery services in Manipur and Delhi.'
   },
   {
     icon: TruckIcon,
@@ -116,7 +116,7 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto"
               >
-                Join Mateng today and experience hassle-free shipping between Imphal and Delhi with professional invoice management.
+                Get Mateng today and experience hassle-free shipping between Imphal and Delhi with our tracking system.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -125,7 +125,7 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="flex flex-wrap justify-center gap-4"
               >
-                <Link to="/services">
+                <Link to="/contact">
                   <Button size="lg" className="bg-mateng-600 hover:bg-mateng-700">
                     Get Started
                   </Button>
@@ -147,7 +147,7 @@ const Index = () => {
                 <div className="flex items-center gap-2 mb-4">
                   <TruckIcon className="h-6 w-6 text-mateng-600" />
                   <span className="text-xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-mateng-700 to-mateng-500">
-                    Mateng
+                    mateng
                   </span>
                 </div>
                 <p className="text-muted-foreground">Professional shipping services between Imphal and Delhi.</p>
@@ -157,8 +157,8 @@ const Index = () => {
                 <h3 className="font-semibold mb-4">Services</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Shipping</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Invoice Management</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Tracking</a></li>
+                  {/* <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Invoice Management</a></li> */}
+                  <li><a href="/contact" className="text-muted-foreground hover:text-mateng-600">Tracking</a></li>
                   <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Delivery Areas</a></li>
                 </ul>
               </div>
@@ -167,17 +167,17 @@ const Index = () => {
                 <h3 className="font-semibold mb-4">Company</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-muted-foreground hover:text-mateng-600">About Us</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Contact</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Careers</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">Terms of Service</a></li>
+                  <li><a href="/contact" className="text-muted-foreground hover:text-mateng-600">Contact</a></li>
+                  <li><a href="https://justmateng.com/openings" className="text-muted-foreground hover:text-mateng-600">Careers</a></li>
+                  <li><a href="https://justmateng.com/terms" className="text-muted-foreground hover:text-mateng-600">Terms of Service</a></li>
                 </ul>
               </div>
               
               <div>
                 <h3 className="font-semibold mb-4">Connect</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">support@mateng.com</a></li>
-                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">+91 123 456 7890</a></li>
+                  <li><a href="#" className="text-muted-foreground hover:text-mateng-600">admin@justmateng.com</a></li>
+                  <li><a href="tel:+917005852488" className="text-muted-foreground hover:text-mateng-600">+91 7005 85 2488</a></li>
                   <li className="flex gap-4 mt-4">
                     <a href="#" className="text-muted-foreground hover:text-mateng-600">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
@@ -197,11 +197,11 @@ const Index = () => {
             </div>
             
             <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-              <p className="mb-2">© 2024 Mateng Shipping. All rights reserved.</p>
+              <p className="mb-2">© 2025 Mateng Delivery. All rights reserved.</p>
               <p className="flex justify-center space-x-4">
-                <Link to="/login" className="hover:text-mateng-600">User Login</Link>
-                <Link to="/register" className="hover:text-mateng-600">User Register</Link>
-                <Link to="/admin/dashboard" className="hover:text-mateng-600">Admin Portal</Link>
+                <Link to="/login" className="hover:text-mateng-600">Admin Login</Link>
+                {/* <Link to="/register" className="hover:text-mateng-600">User Register</Link>
+                <Link to="/admin/dashboard" className="hover:text-mateng-600">Admin Portal</Link> */}
               </p>
             </div>
           </div>

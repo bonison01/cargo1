@@ -36,7 +36,6 @@ const Navbar = () => {
   const authenticatedLinks: NavigationLink[] = [
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'New Invoice', path: '/invoices/new' },
-    { name: 'My Shipments', path: '/shipments' },
   ];
   
   const adminLinks: NavigationLink[] = [
@@ -57,9 +56,8 @@ const Navbar = () => {
     <nav className={navbarClasses}>
       <div className="container px-4 mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <Package className="h-8 w-8 text-mateng-600" />
-          <span className="text-xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-mateng-700 to-mateng-500">
-            Mateng
+          <span className="text-xl font-display font-bold bg-clip-text text-transparent bg-gradient-to-r from-mateng-800 to-mateng-600">
+            mateng
           </span>
         </Link>
 

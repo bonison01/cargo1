@@ -119,11 +119,11 @@ const AuthStatus = ({ isAuthenticated, userName, handleLogout }: AuthStatusProps
   return (
     <div className="flex items-center gap-3">
       <Link to="/login">
-        <Button variant="ghost" size="sm">Log In</Button>
+        <Button variant="ghost" size="sm">Admin</Button>
       </Link>
-      <Link to="/register">
+      {/* <Link to="/register">
         <Button size="sm" className="bg-mateng-600 hover:bg-mateng-700">Sign Up</Button>
-      </Link>
+      </Link> */}
     </div>
   );
 };

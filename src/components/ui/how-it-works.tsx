@@ -6,8 +6,8 @@ import { FileText, Package, TruckIcon, CheckCircle } from 'lucide-react';
 const steps = [
   {
     icon: FileText,
-    title: "Create Invoice",
-    description: "Fill out the shipping details and generate a professional invoice",
+    title: "Contact us",
+    description: "Fill out the shipping details and create a order.",
     color: "bg-blue-50",
     iconColor: "text-blue-600"
   },

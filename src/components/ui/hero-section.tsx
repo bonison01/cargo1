@@ -31,9 +31,9 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight"
             >
-              Ship with confidence between{' '}
+              Welcome to {' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-mateng-700 to-mateng-500">
-                Imphal and Delhi
+                Mateng Logistics
               </span>
             </motion.h1>
 
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg text-muted-foreground max-w-xl"
             >
-              Streamline your shipping process with our professional invoice management and real-time tracking system. We take care of everything so you can focus on what matters.
+              Streamline your shipping process with our real-time tracking system. We take care of everything so you can focus on what matters.
             </motion.p>
 
             <motion.div
@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-wrap gap-4 pt-2"
             >
-              <Link to="/register">
+              <Link to="/contact">
                 <Button size="lg" className="bg-mateng-600 hover:bg-mateng-700 text-white rounded-lg">
                   Get Started <ArrowRight size={16} className="ml-2" />
                 </Button>
@@ -78,7 +78,7 @@ const HeroSection: React.FC = () => {
                     <FileText className="h-6 w-6 text-mateng-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Professional Invoice</h3>
+                    <h3 className="text-lg font-semibold">Track Invoice</h3>
                     <p className="text-sm text-muted-foreground">MT-2024050001</p>
                   </div>
                   <div className="ml-auto">
@@ -108,11 +108,11 @@ const HeroSection: React.FC = () => {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <p className="text-sm text-muted-foreground">Shipped Date</p>
-                      <p className="font-medium">May 15, 2024</p>
+                      <p className="font-medium">March 15, 2025</p>
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Estimated Delivery</p>
-                      <p className="font-medium">May 18, 2024</p>
+                      <p className="font-medium">March 16, 2025</p>
                     </div>
                   </div>
 

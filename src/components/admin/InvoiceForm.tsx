@@ -31,29 +31,7 @@ const InvoiceForm: React.FC<InvoiceFormProps> = ({
     <form onSubmit={handleSubmit} className="glass-card rounded-xl p-6">
       <h3 className="text-lg font-medium mb-4">Basic Information</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div className="space-y-2">
-          <Label htmlFor="originCity">City of Origin</Label>
-          <Input
-            id="originCity"
-            name="originCity"
-            placeholder="e.g., Mumbai"
-            value={invoiceData.originCity}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        
-        <div className="space-y-2">
-          <Label htmlFor="destinationCity">City of Destination</Label>
-          <Input
-            id="destinationCity"
-            name="destinationCity"
-            placeholder="e.g., Delhi"
-            value={invoiceData.destinationCity}
-            onChange={handleChange}
-            required
-          />
-        </div>
+
         
         <div className="space-y-2">
           <Label htmlFor="from">From (Origin Address)</Label>

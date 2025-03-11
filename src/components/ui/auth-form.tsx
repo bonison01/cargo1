@@ -259,7 +259,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ type, onSubmit }) => {
           {type === 'login' ? (
             <p className="text-muted-foreground">
               Don't have an account?{' '}
-              <a href="/register" className="text-mateng-600 hover:text-mateng-700 font-medium">
+              <a href="#" className="text-mateng-600 hover:text-mateng-700 font-medium">
                 Sign up
               </a>
             </p>
