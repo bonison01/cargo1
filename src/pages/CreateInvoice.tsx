@@ -64,12 +64,12 @@ const CreateInvoice = () => {
     return basicFreight + cod + freightHandling + pickupDelivery + packaging + cwbCharge + otherCharges;
   };
   
-  const calculateGST = () => {
-    return calculateSubtotal() * 0.18; // 18% GST
-  };
+  // const calculateGST = () => {
+  //   return calculateSubtotal() * 0.18; // 18% GST
+  // };
   
   const calculateTotal = () => {
-    return calculateSubtotal() + calculateGST();
+    return calculateSubtotal();
   };
   
   const handleInvoiceChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -532,10 +532,10 @@ const CreateInvoice = () => {
                     <span className="text-muted-foreground">Subtotal:</span>
                     <span>₹{calculateSubtotal().toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between items-center mb-1">
+                  {/* <div className="flex justify-between items-center mb-1">
                     <span className="text-muted-foreground">CGST (18%):</span>
                     <span>₹{calculateGST().toFixed(2)}</span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between items-center font-bold">
                     <span>Total:</span>
                     <span>₹{calculateTotal().toFixed(2)}</span>
