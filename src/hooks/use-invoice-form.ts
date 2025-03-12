@@ -101,15 +101,15 @@ export const useInvoiceForm = (invoiceId?: string) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validation
-    if (!invoiceData.from || !invoiceData.to || !invoiceData.originCity || !invoiceData.destinationCity) {
-      toast({
-        title: "Missing information",
-        description: "Please fill in all required fields",
-        variant: "destructive",
-      });
-      return;
-    }
+    // // Validation
+    // if (!invoiceData.from || !invoiceData.to || !invoiceData.originCity || !invoiceData.destinationCity) {
+    //   toast({
+    //     title: "Missing information",
+    //     description: "Please fill in all required fields",
+    //     variant: "destructive",
+    //   });
+    //   return;
+    // }
     
     try {
       setIsSubmitting(true);
